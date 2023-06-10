@@ -12,14 +12,74 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>I am a software Engineer</p>
-        <p>
-          (This is a sample website - you’ll be building a site like this in{' '}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
-        </p>
+      <p class="mt-1 mb-4 text-center text-[#878787]">Explore the best experience now</p>
+      
+      <form>
+                  <div class="mb-6">
+                     <input
+                        type="text"
+                        placeholder="Email"
+                        class="
+                        w-full
+                        rounded-md
+                        border
+                        bordder-[#E9EDF4]
+                        py-3
+                        px-5
+                        bg-[#ececec]
+                        text-base text-body-color
+                        placeholder-[#ACB6BE]
+                        outline-none
+                        focus-visible:shadow-none
+                        focus:border-primary
+                        "
+                        />
+                  </div>
+                  <div class="mb-6">
+                     <input
+                        type="password"
+                        placeholder="Password"
+                        class="
+                        w-full
+                        rounded-md
+                        border
+                        bordder-[#E9EDF4]
+                        py-3
+                        px-5
+                        bg-[#ececec]
+                        text-base text-body-color
+                        placeholder-[#ACB6BE]
+                        outline-none
+                        focus-visible:shadow-none
+                        focus:border-primary
+                        "
+                        />
+                  </div>
+                  <div class="mb-18">
+                     <input
+                        type="submit"
+                        value="Sign In"
+                        class="
+                        w-full
+                        rounded-md
+                        border
+                        border-primary
+                        mt-10
+                        py-3
+                        px-5
+                        bg-[#0070f3]
+                        text-base text-white
+                        cursor-pointer
+                        hover:bg-opacity-90
+                        transition
+                        "
+                        />
+                  </div>
+               </form>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
+        <p class="mt-8 text-center text-[#878787]">Don't have an account? <a> Register</a></p>
+        {/* <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
@@ -30,7 +90,7 @@ export default function Home({ allPostsData }) {
               </small>
             </li>
           ))}
-        </ul>
+        </ul> */}
       </section>
     </Layout>
   )
